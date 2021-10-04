@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "..\\Jammming"
+		}
+	],
+	"settings": {
+		"output.smartScroll.enabled": false,
+		"debug.console.collapseIdenticalLines": false
+	}
+}

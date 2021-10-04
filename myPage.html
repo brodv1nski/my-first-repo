@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+
+    <title>Morozov.A.A</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+    <header class='header'>
+        <div class='nav'>
+            <nav id='nav'>
+                <ul class='s'>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#Certificates">Certificates</a></li>
+                    <li><a href="#JavaScript">JavaScript example</a></li>
+                    <!--<li><a href=#>React</a></li>-->
+                    <li><a href="#contacts">Skills/Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class='container' id='aboutMe'>
+        <div class='firstBlock'>
+            <p class=introduce>Hello there. I`m Alexander , <span class='years'>24</span> years old beginner frontend developer from <span class='city'>Moscow</span>. At the moment I have been non-stop programming for 3 months. I study everything that will help me become
+                a great developer with huge skills
+            </p>
+        </div>
+        <div class='secondBlock'>
+            <img class='photo1' src="./img/photo1.jpg">
+        </div>
+        <div class=lineBreak></div>
+        <div class='thirdBlock'>
+            <img class='photo2' src="./img/photo2.png">
+        </div>
+        <div class='fourthBlock'>
+            <p> Apart from development, I am very passionate about longboard (Note the photo above) and table games :)
+            </p>
+        </div>
+        <div class=lineBreak></div>
+        <div class='certificates' id='Certificates'>
+            <h1>My certificates</h1>
+        </div>
+        <div class='lineBreak'></div>
+
+        <img class=htmlcert src='./img/html.png' alt=HTML>
+        <img class=csscert src='./img/cssser.png' alt=CSS>
+        <img class=jscert src='./img/jsser.png' alt=JS>
+        <img class=reactcert src='./img/reactser.png' alt=REACT>
+
+        <div class='lineBreak'></div>
+        <div class='seventhBlock' id='JavaScript'>
+            <p>
+                In this section of the page you can see my little programm written in javascript<br> (You can find code at my <a href=#>GitHub</a>)</p>
+
+        </div>
+        <div class='lineBreak'></div>
+
+        <div class='jsTextBlock'>
+            <p class='jsTextBlockP'>I have implemented encode and decode function. By the name, you can understand what these functions will do. The decode function turns your message into different sets of numbers, separated by a space. The sum of the digits in each set will
+                be equal to the ASCII code of a specific letter from your message.The decode function acts in the opposite direction</p>
+        </div>
+        <div class='lineBreak'></div>
+        <div class='encode'>
+            <div>
+                <div class='jsCodeBlock'>
+                    <p class='encodeP'>Encode</p>
+                    <Div class='instructions'>
+                        <ul class="encodeUl">
+                            <li>Only english letters,numbers and special symbols</li>
+                            <li>Message length must be up to 10 symbols long</li>
+                        </ul>
+                    </Div>
+                    <div class="input1">
+                        <input class='input1' id='message' type="text" placeholder="Input your text here">
+                    </div>
+                    <div class='jsButton'>
+                        <button class='button' onclick='encode()'><span>Encode text</span></button>
+                    </div>
+                    <div class='encodeResult'>
+                        <output id='values'>
+                        </output>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='decode'>
+            <div>
+                <div class='jsCodeBlock'>
+                    <p class='decodeP'>Decode</p>
+                    <div class='instructions'>
+                        <ul class="decodeUl">
+                            <li>To get result you must use encode function first</li>
+                            <li>Just paste the encode result at decode input field</li>
+                        </ul>
+                    </div>
+                    <div class=jsInput>
+                        <input class='input2' id='secondMessage' type="text" placeholder="Paste encode result here">
+                    </div>
+                    <div class='jsButton'>
+                        <button class='button' onclick='decode()'>Decode numbers</button>
+                    </div>
+                    <div class='decodeResult'>
+                        <output id='secondValues'></output>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='lineBreak'></div>
+        <div class='skills'>
+            <h1 class='hardSkills'>Hard skills</h1>
+            <ul class='hardSkillsLi'>
+                <li>HTML/CSS</li>
+                <li>JavaScript/React</li>
+                <li>TypeScript</li>
+                <li>Git</li>
+            </ul>
+        </div>
+        <div class='skills'>
+            <h1 class='softSkills'>Soft skills</h1>
+            <ul class='softSkillsLi'>
+                <li>Good communication</li>
+                <li>Teamwork player</li>
+                <li>Creativity</li>
+                <li>Willingness to learn</li>
+            </ul>
+        </div>
+        <div class='lineBreak'></div>
+        <footer class=footer>
+            <p class='contactsP' id='contacts'>phone: +7(903)6261166 .mail: brodvinski@mail.ru<br>
+            </p>
+        </footer>
+
+    </div>
+    <script defer src="EncodeDecode2.js"></script>
+    </script>
+</body>
+
+</html>
